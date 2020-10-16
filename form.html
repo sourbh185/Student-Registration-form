@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Student Registration form</title>
+        <link rel="stylesheet" type="text/css" href="form.css">
+        <script type="text/javascript" src="form.js"></script>
+    </head>
+    <body >
+        <form action="#" >
+            <div id="content">
+            
+            <h1 id="heading">Student Registration Form</h1>
+            
+            <table border="0">    
+            
+            <!--using validatefirst() for password validation  -->
+            <tr>
+            <td class="left">Enter first name</td>
+            <td class="right"><input  type="text" name="firstname" id="firstname" onblur="validatefirst();"></td>
+            <td class="feedback"><span id="alert1">&nbsp;</span></td>
+            </tr> 
+            
+            <!-- using validatesecond() -->
+            <tr>
+            <td class="left">Enter last name</td>
+            <td class="right"><input  type="text" name="lastname" id="lastname" onblur="validatesecond();" ></td>
+            <td class="feedback"><span id="alert2"></span></td>
+            </tr> 
+            
+            <tr>
+            <td class="left">Enter password</td>
+            <td class="right"><input id="pass1"  type="password"  name="pass1"></td>
+           
+            </tr>
+
+            <tr>
+            <td class="left">Verify password</td>
+            <td class="right"><input id="pass2"  type="password" name="pass2"></td>
+            
+            </tr>
+                
+            
+            <tr>
+            <td class="left">Select your stream</td>
+            <td >
+            <input type="radio" name="subject" value="science" checked>Science<br>
+            <input type="radio" name="subject" value="Commerce">Commerce<br>
+            <input type="radio" name="subject" value="Humanities">Humanities<br>
+            </td>
+            </tr>
+
+            <!--input type is text here-->
+            <!-- using validatephone() -->
+            <tr>
+            <td class="left">Enter phone number</td>
+            <td class="right"><input type="text" name="mobileno"  id="no" onblur=" return validatephone();" placeholder="xxx-xxx-xxxx"></td>
+            <td class="feedback"><span id="alert5">xxx-xxx-xxxx</span></td>
+            </tr>
+
+            <tr>
+                <td class="left">Enter Your Email(If Any)</td>
+                <td class="right"><input   type="email"  name="email"></td>
+            </tr>
+    
+            
+            <tr>
+            <td class="left">Enter your D.O.B</td>
+            <td class="right"><input  type="date" name="birthday"></td>
+            <td class="feedback"><span id="alert6"></span></td>
+            </tr>
+            
+        </table>
+        
+        <!--  using validateform() -->
+        <div id ="button">
+           <br><br><button onclick="return validateform();">Submit</button>
+        </div>
+       
+        </div>
+        
+    </form>
+
+    </body>
+</html>

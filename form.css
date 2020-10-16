@@ -1,0 +1,58 @@
+body{
+    background-image: url(img.jpg);
+    color: #000;
+    font-family: "Times New Roman",'Times New Roman', Times, serif;
+    font-size: large;
+    
+}
+
+table{
+    width: 500px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+td{
+    vertical-align: top;
+    padding: 5px;
+    word-wrap: break-word;
+
+}
+
+form{
+ padding-top: 5em;
+}
+
+#heading{
+color: rgb(110, 54, 13);
+font-family: 'Times New Roman', Times, serif;
+}
+
+#content{
+    display: block;
+    max-zoom: 100px;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.feedback{
+    text-align: center;
+    vertical-align: middle;
+    color: thistle;
+    font-size: small;
+}
+
+#button{
+    text-align: center;
+}
